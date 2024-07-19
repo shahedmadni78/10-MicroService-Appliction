@@ -33,6 +33,6 @@ jobs:
         
     - name: Test with pytest
       run: |
-        pip install email_server.py
+        pip install requirements.txt
         export PYTHONPATH=src/emailservice
-        email_server.py
+        pytest
